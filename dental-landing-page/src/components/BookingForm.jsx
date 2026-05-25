@@ -158,7 +158,7 @@ function BookingForm() {
                       cursor: "pointer",
                     }}
                   >
-                    I consent to BrightSmile Dental collecting and processing my personal data to contact me about dental services. Your data is held securely and never sold to third parties. View our{" "}
+                    I consent to Smile Dental Care collecting and processing my personal data to contact me about dental services. Your data is held securely and never sold to third parties. View our{" "}
                     <a href="/privacy" style={{ color: "var(--teal-600)" }}>Privacy Policy</a>.{" "}
                     <strong>You can withdraw consent at any time.</strong>
                   </label>
