@@ -69,7 +69,7 @@ function Hero() {
                 </div>
                 {/* Replace with your Calendly link */}
                 <iframe
-                  src="https://calendly.com/YOUR_CALENDLY_USERNAME/free-consultation?embed_type=Inline&hide_gdpr_banner=1"
+                  src="https://calendly.com/booksmiledentalcare/openday-aligners"
                   width="100%" height="460" frameBorder="0"
                   title="Book a consultation"
                   style={{ display: "block" }}
