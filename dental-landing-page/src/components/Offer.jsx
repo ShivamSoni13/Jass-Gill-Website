@@ -1,85 +1,80 @@
 import { motion } from "framer-motion"
 
 function Offer() {
-  const savings = [
-    { label: "Consultation",        original: "£120", saving: "FREE",   highlight: false },
-    { label: "Digital Smile Scan",  original: "£250", saving: "FREE",   highlight: false },
-    { label: "Hygiene Session",     original: "£80",  saving: "FREE",   highlight: false },
-    { label: "Teeth Whitening",     original: "£350", saving: "£350",   highlight: false },
-    { label: "Retainers",           original: "£700", saving: "£700",   highlight: false },
-    { label: "Same-Day Discount",   original: "",     saving: "£500 off", highlight: true },
-  ]
-
   return (
-    <section style={{ padding: "90px 20px", background: "var(--white)" }}>
+    <section id="offer" style={{ padding: "80px 20px", background: "var(--slate-50)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
-        <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.55 }} style={{ textAlign: "center", marginBottom: 48 }}>
-          <span style={{ display: "inline-block", background: "#fff0f6", color: "var(--cta)", fontFamily: "var(--font-body)", fontWeight: 700, fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", padding: "5px 14px", borderRadius: "var(--r-pill)", border: "1px solid rgba(208,17,87,0.2)", marginBottom: 14 }}>
-            Limited Time Offer
-          </span>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "clamp(30px,4.5vw,52px)", color: "var(--slate-900)", letterSpacing: "-0.8px", lineHeight: 1.1, marginBottom: 12 }}>
-            Up to{" "}
-            <span style={{ color: "var(--cta)" }}>£2,000 Savings</span>
-          </h2>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "var(--slate-500)", maxWidth: 500, margin: "0 auto" }}>
-            Book your free consultation today and unlock every saving below — no obligation.
-          </p>
-        </motion.div>
-
-        {/* Savings table */}
-        <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.55, delay: 0.1 }}
-          style={{ border: "1.5px solid var(--slate-200)", borderRadius: "var(--r-xl)", overflow: "hidden", maxWidth: 680, margin: "0 auto 40px" }}>
-
-          {/* Header row */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr auto auto", background: "var(--slate-900)", padding: "14px 24px", gap: 16 }}>
-            {["Treatment","Worth","You Save"].map(h => (
-              <span key={h} style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, color: "rgba(255,255,255,0.6)", letterSpacing: "0.06em", textTransform: "uppercase" }}>{h}</span>
-            ))}
-          </div>
-
-          {savings.map((row, i) => (
-            <div key={i} style={{
-              display: "grid", gridTemplateColumns: "1fr auto auto",
-              padding: "16px 24px", gap: 16,
-              alignItems: "center",
-              background: row.highlight ? "rgba(208,17,87,0.04)" : i % 2 === 0 ? "var(--white)" : "var(--slate-50)",
-              borderTop: "1px solid var(--slate-100)",
-            }}>
-              <span style={{ fontFamily: "var(--font-body)", fontWeight: 500, fontSize: 15, color: "var(--slate-800)" }}>{row.label}</span>
-              <span style={{ fontFamily: "var(--font-body)", fontWeight: 400, fontSize: 14, color: "var(--slate-400)", textAlign: "right" }}>{row.original}</span>
-              <span style={{
-                fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15,
-                color: row.highlight ? "var(--cta)" : "var(--brand)",
-                textAlign: "right", whiteSpace: "nowrap",
-                background: row.highlight ? "rgba(208,17,87,0.08)" : "var(--brand-50)",
-                border: `1px solid ${row.highlight ? "rgba(208,17,87,0.2)" : "var(--brand-100)"}`,
-                padding: "3px 10px", borderRadius: "var(--r-pill)",
-              }}>
-                {row.saving}
-              </span>
+        {/* Open Day CTA band */}
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
+          style={{ background: "var(--slate-900)", borderRadius: "var(--r-xl)", padding: "20px 28px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16, marginBottom: 64 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", flex: 1 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{ width: 8, height: 8, background: "#22c55e", borderRadius: "50%", animation: "blink 2s infinite" }} />
+              <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: 13, color: "rgba(255,255,255,0.7)", letterSpacing: "0.04em" }}>Call or book online — Limited Availability</span>
             </div>
-          ))}
-
-          {/* Total row */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr auto", padding: "18px 24px", background: "var(--slate-900)", alignItems: "center", borderTop: "1.5px solid var(--slate-700)" }}>
-            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 17, color: "white" }}>Total Savings</span>
-            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 22, color: "var(--brand-light)" }}>Up to £2,000</span>
+            <a href="tel:+441234567890" style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, color: "var(--brand-light)", textDecoration: "none" }}>📞 01234 567890</a>
           </div>
+          <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--brand)", color: "white", padding: "12px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", whiteSpace: "nowrap" }}>
+            📅 Book Online
+          </a>
         </motion.div>
 
-        {/* CTA */}
-        <div style={{ textAlign: "center" }}>
-          <motion.a href="#form" whileHover={{ y: -2 }} whileTap={{ scale: 0.96 }}
-            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "var(--cta)", color: "white", padding: "15px 36px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 17, textDecoration: "none", transition: "all 0.2s" }}>
-            Claim My Savings →
-          </motion.a>
-          <p style={{ marginTop: 12, fontFamily: "var(--font-body)", fontSize: 12, color: "var(--slate-400)" }}>
-            *Subject to clinical suitability. Terms apply. Not valid with any other offer.
-          </p>
+        {/* Ultimate package */}
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, alignItems: "center" }} className="pkg-grid">
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: 13, color: "var(--brand)", letterSpacing: "0.07em", textTransform: "uppercase", marginBottom: 10 }}>Open Day Exclusive</p>
+            <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "clamp(26px,3.5vw,40px)", color: "var(--slate-900)", letterSpacing: "-0.6px", marginBottom: 16 }}>
+              The ultimate Clear Aligner treatment package
+            </h2>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--brand)", fontWeight: 700, marginBottom: 16 }}>
+              Savings of £1,837* on the Open Day
+            </p>
+
+            {[
+              { label: "£500 off Clear Aligner treatment" },
+              { label: "Free consultation", val: "£120" },
+              { label: "Free smile scan", val: "£250" },
+              { label: "Free hygiene session", val: "£80" },
+              { label: "Free retainers", val: "£788" },
+              { label: "Free teeth whitening", val: "£299" },
+              { label: "Free 12 months aftercare" },
+            ].map((row, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--slate-100)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
+                    <rect width="24" height="24" rx="5" fill="var(--brand)"/>
+                    <path d="M6 12l4 4 8-8" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span style={{ fontFamily: "var(--font-body)", fontWeight: 500, fontSize: 14, color: "var(--slate-800)" }}>{row.label}</span>
+                </div>
+                {row.val && <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, color: "var(--slate-400)", textDecoration: "line-through" }}>{row.val}</span>}
+              </div>
+            ))}
+
+            <a href="#booking" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 20, background: "var(--brand)", color: "white", padding: "13px 28px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+              Book Online →
+            </a>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
+            <div style={{ borderRadius: "var(--r-xl)", overflow: "hidden" }}>
+              <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=700&auto=format&fit=crop"
+                alt="Happy patient" style={{ width: "100%", height: 480, objectFit: "cover" }} />
+            </div>
+          </motion.div>
         </div>
 
+        <p style={{ marginTop: 20, fontFamily: "var(--font-body)", fontSize: 11, color: "var(--slate-400)" }}>
+          *Subject to clinical suitability. Terms apply. Not valid with any other offer. £25 refundable deposit required to secure your place.
+        </p>
       </div>
+
+      <style>{`
+        .pkg-grid { grid-template-columns: 1fr 1fr; }
+        @media(max-width:768px){ .pkg-grid{ grid-template-columns:1fr!important; } }
+        @keyframes blink { 0%,100%{opacity:1}50%{opacity:0.4} }
+      `}</style>
     </section>
   )
 }

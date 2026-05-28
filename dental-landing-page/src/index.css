@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* ── Brand ── */
   --brand:       #0fa6be;
   --brand-dark:  #0d8fa5;
   --brand-deep:  #0a7080;
@@ -10,16 +9,12 @@
   --brand-100:   #caf1f7;
   --brand-200:   #96e3ef;
 
-  /* ── CTA ── */
   --cta:         #D01157;
   --cta-dark:    #b00e4a;
-  --cta-light:   #f91d6e;
 
-  /* ── WhatsApp ── */
   --wa:          #25D366;
   --wa-dark:     #1aad54;
 
-  /* ── Neutrals ── */
   --slate-50:    #f8fafc;
   --slate-100:   #f1f5f9;
   --slate-200:   #e2e8f0;
@@ -32,15 +27,14 @@
   --slate-900:   #0f172a;
   --white:       #ffffff;
 
-  /* ── Typography ── */
   --font-display: 'Outfit', sans-serif;
   --font-body:    'Plus Jakarta Sans', sans-serif;
 
-  /* ── Radii ── */
-  --r-sm:   8px;
-  --r-md:   14px;
-  --r-lg:   20px;
-  --r-xl:   28px;
+  --r-sm:   6px;
+  --r-md:   12px;
+  --r-lg:   18px;
+  --r-xl:   24px;
+  --r-2xl:  32px;
   --r-pill: 9999px;
 }
 

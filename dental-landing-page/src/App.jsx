@@ -1,10 +1,10 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
-import Benefits from "./components/Benefits"
 import BeforeAfter from "./components/BeforeAfter"
+import Benefits from "./components/Benefits"
 import Offer from "./components/Offer"
-import BookingForm from "./components/BookingForm"
 import Reviews from "./components/Reviews"
+import BookingForm from "./components/BookingForm"
 import FAQ from "./components/FAQ"
 import StickyCTA from "./components/StickyCTA"
 import Footer from "./components/Footer"
@@ -17,8 +17,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Benefits />
         <BeforeAfter />
+        <Benefits />
         <Offer />
         <Reviews />
         <BookingForm />
