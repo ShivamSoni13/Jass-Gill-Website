@@ -45,7 +45,7 @@ function Benefits() {
 
             <div style={{ marginTop: 4, padding: "14px 18px", background: "var(--brand)", borderRadius: "var(--r-md)", display: "inline-flex", alignItems: "center", gap: 8, alignSelf: "flex-start" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="white"/></svg>
-              <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, color: "white" }}>Savings of £1,837* on the Open Day</span>
+              <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, color: "white" }}>Savings of £2,000* on the Open Day</span>
             </div>
           </div>
 
