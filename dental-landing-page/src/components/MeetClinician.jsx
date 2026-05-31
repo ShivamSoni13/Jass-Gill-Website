@@ -1,4 +1,6 @@
 import { motion } from "framer-motion"
+import jasImage from "../assets/Images/jas-Image.webp";
+
 
 function MeetClinician() {
   return (
@@ -73,9 +75,15 @@ function MeetClinician() {
             {/* Photo */}
             <div style={{ position: "relative" }}>
               <img
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop"
+                src={jasImage}
                 alt="Dr. Jas Gill"
-                style={{ width: "100%", height: 380, objectFit: "cover", objectPosition: "top center", display: "block" }}
+                style={{
+                  width: "100%",
+                  height: 380,
+                  objectFit: "contain",
+                  objectPosition: "center",
+                  display: "block"
+                }}
               />
               {/* Overlay gradient */}
               <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 80, background: "linear-gradient(to top, rgba(15,23,42,0.5), transparent)" }} />
