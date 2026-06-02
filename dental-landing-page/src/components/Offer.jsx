@@ -12,7 +12,7 @@ function Offer() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", flex: 1 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               <div style={{ width: 8, height: 8, background: "#22c55e", borderRadius: "50%", animation: "blink 2s infinite" }} />
-              <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: 13, color: "rgba(255,255,255,0.7)", letterSpacing: "0.04em" }}>Call or book online — Limited Availability</span>
+              <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: 13, color: "rgba(255,255,255,0.7)", letterSpacing: "0.04em" }}>Message Us or book online — Limited Availability</span>
             </div>
             {/* <a href="tel:+441234567890" style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, color: "var(--brand-light)", textDecoration: "none" }}>📞 01234 567890</a> */}
           </div>
@@ -29,16 +29,15 @@ function Offer() {
               The ultimate Clear Aligner treatment package
             </h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "var(--brand)", fontWeight: 700, marginBottom: 16 }}>
-              Savings of £1,837* on the Open Day
+              Savings of £2,000* on the Open Day
             </p>
 
             {[
               { label: "£500 off Clear Aligner treatment" },
-              { label: "Free consultation", val: "£120" },
-              { label: "Free smile scan", val: "£250" },
-              { label: "Free hygiene session", val: "£80" },
-              { label: "Free retainers", val: "£788" },
-              { label: "Free teeth whitening", val: "£299" },
+              { label: "Free consultation" },
+              { label: "Free smile scan", val: "£300" },
+              { label: "Free retainers", val: "£850" },
+              { label: "Free teeth whitening", val: "£350" },
               { label: "Free 12 months aftercare" },
             ].map((row, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid var(--slate-100)" }}>

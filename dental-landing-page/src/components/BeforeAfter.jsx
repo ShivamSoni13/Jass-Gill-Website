@@ -55,20 +55,14 @@ function BeforeAfter() {
     {
       before: before1,
       after: after1,
-      label: "Invisalign Treatment",
-      duration: "8 months",
     },
     {
       before: before2,
       after: after2,
-      label: "Invisalign Treatment",
-      duration: "7 months",
     },
     {
       before: before3,
       after: after3,
-      label: "Invisalign Treatment",
-      duration: "1 Year",
     },
   ];
 

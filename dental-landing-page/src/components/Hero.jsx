@@ -3,9 +3,9 @@ import hero from "../assets/Images/About.webp";
 
 const savings = [
   { label: "£500 off Clear Aligner treatment" },
-  { label: "Free smile scan", sub: "worth £250" },
-  { label: "Free retainers", sub: "worth £788" },
-  { label: "Free teeth whitening", sub: "worth £299" },
+  { label: "Free smile scan", sub: "worth £300" },
+  { label: "Free retainers", sub: "worth £850" },
+  { label: "Free teeth whitening", sub: "worth £350" },
   { label: "Free 12 months aftercare" },
 ]
 
@@ -101,7 +101,7 @@ function Hero() {
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: "clamp(18px,3vw,28px)", color: "white", textAlign: "center", padding: "22px 0 16px", letterSpacing: "-0.4px" }}>
             Book Your FREE* Consultation below<br />
-            <span style={{ fontFamily: "var(--font-body)", fontWeight: 400, fontSize: "clamp(13px,2vw,17px)", opacity: 0.88 }}>Up to £1,837 in savings just for one day!</span>
+            <span style={{ fontFamily: "var(--font-body)", fontWeight: 400, fontSize: "clamp(13px,2vw,17px)", opacity: 0.88 }}>Up to £2,000 in savings just for one day!</span>
           </p>
 
           {/* Savings chips */}
