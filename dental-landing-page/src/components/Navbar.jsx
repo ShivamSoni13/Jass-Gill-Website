@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import smileLogo from "../assets/Images/Smile logo.png"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -32,16 +33,22 @@ function Navbar() {
 
           {/* Logo */}
           <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 10 }}>
-            <img src="/logo.png" alt="Smile Dental Care"
-              style={{ height: 38, width: "auto", objectFit: "contain" }}
-              onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "flex" }}
+            <img
+              src={smileLogo}
+              alt="Smile Dental Care"
+              style={{ height: 60, width: "auto", objectFit: "contain" }}
             />
-            <div style={{ display: "none", alignItems: "center", gap: 8 }}>
-              <div style={{ width: 34, height: 34, background: "var(--brand)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.5 2 7 4.5 7 7c0 1.5.5 3 1 4.5C9 14 9 16 8 18c-.5 1.5 0 4 4 4s4.5-2.5 4-4c-1-2-1-4 0-6.5.5-1.5 1-3 1-4.5 0-2.5-1.5-5-5-5z" fill="white"/></svg>
-              </div>
-              <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 17, color: "var(--slate-900)" }}>Smile Dental Care</span>
-            </div>
+
+            <span
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 800,
+                fontSize: 17,
+                color: "var(--slate-900)"
+              }}
+            >
+              Smile Dental Care
+            </span>
           </a>
 
           {/* Desktop links */}
@@ -52,7 +59,7 @@ function Navbar() {
                 onMouseLeave={e => { e.currentTarget.style.color = "var(--slate-600)"; e.currentTarget.style.background = "transparent" }}
               >{l.label}</a>
             ))}
-            <a href="#booking" style={{ marginLeft: 8, background: "var(--brand)", color: "white", padding: "9px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, textDecoration: "none", transition: "background 0.15s", whiteSpace: "nowrap" }}
+            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ marginLeft: 8, background: "var(--brand)", color: "white", padding: "9px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, textDecoration: "none", transition: "background 0.15s", whiteSpace: "nowrap" }}
               onMouseEnter={e => e.currentTarget.style.background = "var(--brand-dark)"}
               onMouseLeave={e => e.currentTarget.style.background = "var(--brand)"}
             >Book Online</a>

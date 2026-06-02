@@ -23,7 +23,6 @@ function App() {
         <Offer />
         <Reviews />
         <MeetClinician />
-        <BookingForm />
         <FAQ />
       </main>
       <Footer />

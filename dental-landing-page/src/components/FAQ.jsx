@@ -49,7 +49,7 @@ function FAQ() {
               </motion.div>
             ))}
 
-            <a href="#booking" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 8, background: "var(--brand)", color: "white", padding: "13px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", alignSelf: "flex-start" }}>
+            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 8, background: "var(--brand)", color: "white", padding: "13px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", alignSelf: "flex-start" }}>
               Book Online →
             </a>
           </div>

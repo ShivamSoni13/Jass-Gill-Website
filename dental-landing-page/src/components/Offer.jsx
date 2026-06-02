@@ -15,7 +15,7 @@ function Offer() {
             </div>
             <a href="tel:+441234567890" style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, color: "var(--brand-light)", textDecoration: "none" }}>📞 01234 567890</a>
           </div>
-          <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--brand)", color: "white", padding: "12px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", whiteSpace: "nowrap" }}>
+          <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--brand)", color: "white", padding: "12px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", whiteSpace: "nowrap" }}>
             📅 Book Online
           </a>
         </motion.div>
@@ -52,7 +52,7 @@ function Offer() {
               </div>
             ))}
 
-            <a href="#booking" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 20, background: "var(--brand)", color: "white", padding: "13px 28px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 20, background: "var(--brand)", color: "white", padding: "13px 28px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               Book Online →
             </a>
           </motion.div>

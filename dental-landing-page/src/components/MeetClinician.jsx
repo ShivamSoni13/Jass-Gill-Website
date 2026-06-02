@@ -127,7 +127,7 @@ function MeetClinician() {
 
               {/* CTA */}
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                <a href="#booking" style={{
+                <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
                   background: "var(--brand)", color: "white",
                   padding: "12px 24px", borderRadius: "var(--r-pill)",
@@ -139,7 +139,7 @@ function MeetClinician() {
                 >
                   📅 Book with Dr. Gill
                 </a>
-                <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" style={{
+                <a href="https://wa.me/447305153359" target="_blank" rel="noopener noreferrer" style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
                   background: "#25D366", color: "white",
                   padding: "12px 22px", borderRadius: "var(--r-pill)",

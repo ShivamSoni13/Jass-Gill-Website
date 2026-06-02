@@ -1,3 +1,5 @@
+import smileLogo from "../assets/Images/Smile logo.png"
+
 function Footer() {
   const year = new Date().getFullYear()
   const fLink = { display: "block", fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.4)", textDecoration: "none", marginBottom: 9, transition: "color 0.15s" }
@@ -11,8 +13,15 @@ function Footer() {
 
           {/* Brand */}
           <div>
-            <img src="/logo.png" alt="Smile Dental Care" style={{ height: 36, objectFit: "contain", marginBottom: 14 }}
-              onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "block" }} />
+            <img
+              src={smileLogo}
+              alt="Smile Dental Care"
+              style={{
+                height: 150, width: "auto",
+                objectFit: "contain",
+                marginBottom: 14
+              }}
+            />
             <p style={{ display: "none", fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 16, color: "white", marginBottom: 14 }}>Smile Dental Care</p>
             <p style={{ fontFamily: "var(--font-body)", fontWeight: 300, fontSize: 13, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, maxWidth: 200, marginBottom: 14 }}>
               Smile Dental Care, 24 High Street, Slough, SL1 1EQ
@@ -41,14 +50,14 @@ function Footer() {
           </div>
 
           {/* Contact + CTA */}
-          <div>
+         <div style={{ minWidth: 300}}>
             <p style={fHead}>Get In Touch</p>
-            <a href="tel:+441234567890" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>📞 01234 567890</a>
-            <a href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="#25D366"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>💬 WhatsApp Us</a>
-            <a href="mailto:hello@smiledentalcare.co.uk" style={{ ...fLink, marginBottom: 18 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>✉ hello@smiledentalcare.co.uk</a>
-            <a href="#booking" style={{ display: "inline-block", background: "var(--brand)", color: "white", padding: "10px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>Book Online →</a>
+            <a href="tel:+443304415566" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>📞 0330 44 15566</a>
+            <a href="https://wa.me/447305153359" target="_blank" rel="noopener noreferrer" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="#25D366"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>💬 WhatsApp Us</a>
+            <a href="mailto:customerservice@smiledentalcare.co.uk" style={{ ...fLink, marginBottom: 18, whiteSpace: "nowrap", fontSize: 12 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>✉ customerservice@smiledentalcare.co.uk</a>
+            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-block", background: "var(--brand)", color: "white", padding: "10px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>Book Online →</a>
           </div>
-        </div>
+        </div> 
 
         {/* Compliance */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 22 }}>

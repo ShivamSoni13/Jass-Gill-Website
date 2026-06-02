@@ -13,7 +13,22 @@ function Hero() {
     <section style={{ background: "white", paddingTop: 62 }}>
 
       {/* ── Top hero band ── */}
-      <div style={{ background: "var(--brand-50)", borderBottom: "1px solid var(--brand-100)", padding: "clamp(40px,6vw,72px) 20px 0" }}>
+      <div
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        rgba(240, 247, 250, 0.82),
+        rgba(240, 247, 250, 0.82)
+      ),
+      url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1080&auto=format&fit=crop")
+    `,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    borderBottom: "1px solid var(--brand-100)",
+    padding: "clamp(40px,6vw,72px) 20px 0"
+  }}
+>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
           <div className="hero-top-grid">
