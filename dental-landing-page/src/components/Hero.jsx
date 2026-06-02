@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import hero from "../assets/Images/About.webp";
 
 const savings = [
   { label: "£500 off Clear Aligner treatment" },
@@ -20,7 +21,7 @@ function Hero() {
         rgba(240, 247, 250, 0.82),
         rgba(240, 247, 250, 0.82)
       ),
-      url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1080&auto=format&fit=crop")
+      url(${hero})
     `,
     backgroundSize: "cover",
     backgroundPosition: "center",

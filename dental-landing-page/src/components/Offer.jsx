@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import offer from "../assets/Images/Jas Gill 1.webp";
 
 function Offer() {
   return (
@@ -13,7 +14,7 @@ function Offer() {
               <div style={{ width: 8, height: 8, background: "#22c55e", borderRadius: "50%", animation: "blink 2s infinite" }} />
               <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, fontSize: 13, color: "rgba(255,255,255,0.7)", letterSpacing: "0.04em" }}>Call or book online — Limited Availability</span>
             </div>
-            <a href="tel:+441234567890" style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, color: "var(--brand-light)", textDecoration: "none" }}>📞 01234 567890</a>
+            {/* <a href="tel:+441234567890" style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, color: "var(--brand-light)", textDecoration: "none" }}>📞 01234 567890</a> */}
           </div>
           <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--brand)", color: "white", padding: "12px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", whiteSpace: "nowrap" }}>
             📅 Book Online
@@ -59,8 +60,7 @@ function Offer() {
 
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <div style={{ borderRadius: "var(--r-xl)", overflow: "hidden" }}>
-              <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=700&auto=format&fit=crop"
-                alt="Happy patient" style={{ width: "100%", height: 480, objectFit: "cover" }} />
+              <img src={offer} alt="Happy patient" style={{ width: "100%", height: 480, objectFit: "cover" }} />
             </div>
           </motion.div>
         </div>

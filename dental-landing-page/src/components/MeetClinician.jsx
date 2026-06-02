@@ -118,7 +118,7 @@ function MeetClinician() {
               {/* Quote */}
               <div style={{ background: "rgba(15,166,190,0.1)", border: "1px solid rgba(15,166,190,0.22)", borderRadius: "var(--r-md)", padding: "16px 18px", marginBottom: 28 }}>
                 <p style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontWeight: 300, fontSize: 14, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, margin: 0 }}>
-                  "My goal is simple — to give every patient a smile they're truly proud of, using the latest techniques in a relaxed and welcoming environment."
+                  "My goal is simple — to give every patient a smile they're truly proud of."
                 </p>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, color: "var(--brand-light)", marginTop: 10 }}>
                   — Dr. Jas Gill

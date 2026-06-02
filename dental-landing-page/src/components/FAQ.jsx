@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import faq from "../assets/Images/About.webp";
 
 function FAQ() {
   const [open, setOpen] = useState(0)
@@ -76,8 +77,7 @@ function FAQ() {
             </div>
 
             <div style={{ borderRadius: "var(--r-xl)", overflow: "hidden" }}>
-              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=600&auto=format&fit=crop"
-                alt="Smile" style={{ width: "100%", height: 200, objectFit: "cover" }} />
+              <img src={faq} alt="Smile" style={{ width: "100%", height: 300, objectFit: "cover" }} />
             </div>
           </motion.div>
         </div>

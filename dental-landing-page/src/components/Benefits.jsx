@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import wcu from "../assets/Images/WCU.webp";
 
 function Benefits() {
   const items = [
@@ -52,7 +53,7 @@ function Benefits() {
           {/* Right: image + extra items */}
           <div>
             <div style={{ borderRadius: "var(--r-xl)", overflow: "hidden", marginBottom: 20 }}>
-              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=700&auto=format&fit=crop"
+              <img src={wcu}
                 alt="Happy patient" style={{ width: "100%", height: 280, objectFit: "cover" }} />
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
