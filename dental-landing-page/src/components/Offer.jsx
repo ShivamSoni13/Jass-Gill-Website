@@ -52,9 +52,28 @@ function Offer() {
               </div>
             ))}
 
-            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", marginTop: 20, background: "var(--brand)", color: "white", padding: "13px 28px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-              Book Online →
-            </a>
+             <a
+            href="https://calendly.com/booksmiledentalcare/clear-aligners-open-day-sat-4th-july-with-dr-aisha"
+            onClick={() => {
+              window?.fbq?.('track', 'Lead');
+            }}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "var(--brand)",
+              color: "white",
+              padding: "12px 24px",
+              borderRadius: "var(--r-pill)",
+              fontFamily: "var(--font-display)",
+              fontWeight: 700,
+              fontSize: 15,
+              textDecoration: "none",
+              whiteSpace: "nowrap"
+            }}
+            >
+            📅 Book Online
+          </a>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>

@@ -59,10 +59,29 @@ function Navbar() {
                 onMouseLeave={e => { e.currentTarget.style.color = "var(--slate-600)"; e.currentTarget.style.background = "transparent" }}
               >{l.label}</a>
             ))}
-            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ marginLeft: 8, background: "var(--brand)", color: "white", padding: "9px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, textDecoration: "none", transition: "background 0.15s", whiteSpace: "nowrap" }}
+            <a
+              href="https://calendly.com/booksmiledentalcare/clear-aligners-open-day-sat-4th-july-with-dr-aisha"
+              onClick={() => {
+                window?.fbq?.('track', 'Lead');
+              }}
+              style={{
+                marginLeft: 8,
+                background: "var(--brand)",
+                color: "white",
+                padding: "9px 20px",
+                borderRadius: "var(--r-pill)",
+                fontFamily: "var(--font-display)",
+                fontWeight: 700,
+                fontSize: 14,
+                textDecoration: "none",
+                transition: "background 0.15s",
+                whiteSpace: "nowrap"
+              }}
               onMouseEnter={e => e.currentTarget.style.background = "var(--brand-dark)"}
               onMouseLeave={e => e.currentTarget.style.background = "var(--brand)"}
-            >Book Online</a>
+            >
+              Book Online
+            </a>
           </div>
 
           {/* Hamburger */}
@@ -88,10 +107,28 @@ function Navbar() {
               <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)}
                 style={{ display: "block", fontFamily: "var(--font-body)", fontWeight: 500, fontSize: 16, color: "var(--slate-700)", textDecoration: "none", padding: "12px 4px", borderBottom: "1px solid var(--slate-100)" }}>{l.label}</a>
             ))}
-            <a href="#booking" onClick={() => setMenuOpen(false)}
-              style={{ display: "block", marginTop: 12, background: "var(--brand)", color: "white", padding: "13px 24px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 15, textDecoration: "none", textAlign: "center" }}>
-              Book Online
-            </a>
+             <a
+                href="https://calendly.com/booksmiledentalcare/clear-aligners-open-day-sat-4th-july-with-dr-aisha"
+                onClick={() => {
+                  setMenuOpen(false);
+                  window?.fbq?.('track', 'Lead');
+                }}
+                style={{
+                  display: "block",
+                  marginTop: 12,
+                  background: "var(--brand)",
+                  color: "white",
+                  padding: "13px 24px",
+                  borderRadius: "var(--r-pill)",
+                  fontFamily: "var(--font-display)",
+                  fontWeight: 700,
+                  fontSize: 15,
+                  textDecoration: "none",
+                  textAlign: "center"
+                }}
+              >
+                Book Online
+              </a>
           </motion.div>
         )}
       </AnimatePresence>

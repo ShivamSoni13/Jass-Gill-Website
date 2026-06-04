@@ -21,11 +21,30 @@ function StickyCTA() {
             style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "#25D366", color: "white", padding: "10px 18px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, textDecoration: "none", whiteSpace: "nowrap" }}>
             {WA} WhatsApp
           </motion.a>
-          <motion.a href="https://calendly.com/booksmiledentalcare/openday-aligners"
-            whileHover={{ y: -1 }} whileTap={{ scale: 0.96 }}
-            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "var(--brand)", color: "white", padding: "10px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 14, textDecoration: "none", whiteSpace: "nowrap" }}>
-            📅 Book Online
-          </motion.a>
+          <motion.a
+              href="https://calendly.com/booksmiledentalcare/clear-aligners-open-day-sat-4th-july-with-dr-aisha"
+              onClick={() => {
+                window?.fbq?.('track', 'Lead');
+              }}
+              whileHover={{ y: -1 }}
+              whileTap={{ scale: 0.96 }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "var(--brand)",
+                color: "white",
+                padding: "10px 20px",
+                borderRadius: "var(--r-pill)",
+                fontFamily: "var(--font-display)",
+                fontWeight: 700,
+                fontSize: 14,
+                textDecoration: "none",
+                whiteSpace: "nowrap"
+              }}
+              >
+              📅 Book Online
+            </motion.a>
         </div>
       </div>
       <style>{`@keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}`}</style>

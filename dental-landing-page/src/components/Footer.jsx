@@ -55,7 +55,27 @@ function Footer() {
             <a href="tel:+443304415566" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>📞 0330 44 15566</a>
             <a href="https://wa.me/447305153359" target="_blank" rel="noopener noreferrer" style={{ ...fLink, marginBottom: 8 }} onMouseEnter={e=>e.target.style.color="#25D366"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>💬 WhatsApp Us</a>
             <a href="mailto:customerservice@smiledentalcare.co.uk" style={{ ...fLink, marginBottom: 18, whiteSpace: "nowrap", fontSize: 12 }} onMouseEnter={e=>e.target.style.color="var(--brand-light)"} onMouseLeave={e=>e.target.style.color="rgba(255,255,255,0.4)"}>✉ customerservice@smiledentalcare.co.uk</a>
-            <a href="https://calendly.com/booksmiledentalcare/openday-aligners" style={{ display: "inline-block", background: "var(--brand)", color: "white", padding: "10px 20px", borderRadius: "var(--r-pill)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: 13, textDecoration: "none" }}>Book Online →</a>
+            <a
+            href="https://calendly.com/booksmiledentalcare/clear-aligners-open-day-sat-4th-july-with-dr-aisha"
+            onClick={() => {
+              if (window.fbq) {
+                window.fbq('track', 'Lead');
+              }
+            }}
+            style={{
+              display: "inline-block",
+              background: "var(--brand)",
+              color: "white",
+              padding: "10px 20px",
+              borderRadius: "var(--r-pill)",
+              fontFamily: "var(--font-display)",
+              fontWeight: 700,
+              fontSize: 13,
+              textDecoration: "none"
+            }}
+            >
+            Book Online →
+          </a>
           </div>
         </div> 
 
