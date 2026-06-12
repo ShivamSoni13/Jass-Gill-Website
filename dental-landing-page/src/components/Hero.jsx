@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import hero from "../assets/Images/About.webp";
+import hero from "../assets/Images/about.png";
 
 const savings = [
   { label: "£500 off Clear Aligner treatment" },

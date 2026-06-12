@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import faq from "../assets/Images/About.webp";
+import faq from "../assets/Images/about.png";
 
 function FAQ() {
   const [open, setOpen] = useState(0)
